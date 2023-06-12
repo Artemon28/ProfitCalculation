@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProfitCalculation.Presenter.CalculatePresenter">
+    <Position X="0.5" Y="5.25" Width="1.75" />
+    <AssociationLine Name="RealizerService" Type="ProfitCalculation.Logic.OrderRealizer.Services.RealizerService">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.043" Y="0.21" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAQAAMAAAAEAAAAIAAACEAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Presenter\CalculatePresenter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="calcView" />
+      <Property Name="HandlingRepository" />
+      <Property Name="MaterialRepository" />
+      <Property Name="OrderRepository" />
+      <Property Name="ChainRepository" />
+      <Property Name="ChainService" />
+      <Property Name="RealizerService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProfitCalculation.UI.CalcView" Collapsed="true">
+    <Position X="0.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEACAwAACAAABQCoACBAAACAAFEAQAAACAAAAAAgAI=</HashCode>
+      <FileName>UI\CalcView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProfitCalculation.Logic.Handlings.Repositories.HandlingRepository">
+    <Position X="6.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEIACAA=</HashCode>
+      <FileName>Logic\Handlings\Repositories\HandlingRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProfitCalculation.Logic.Orders.Repositories.OrderRepository">
+    <Position X="3.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Logic\Orders\Repositories\OrderRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProfitCalculation.Logic.Materials.Repositories.MaterialRepository">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Materials\Repositories\MaterialRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProfitCalculation.Logic.Chains.Repository.ChainRepository">
+    <Position X="3.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Logic\Chains\Repository\ChainRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProfitCalculation.Logic.Chains.Service.ChainService">
+    <Position X="6.75" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIEAAAAAAAAA=</HashCode>
+      <FileName>Logic\Chains\Service\ChainService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_handlingService" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProfitCalculation.Logic.OrderRealizer.Services.RealizerService">
+    <Position X="3.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAFAAAAQACAAEAAAAABAACAAAAAAA=</HashCode>
+      <FileName>Logic\OrderRealizer\Services\RealizerService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProfitCalculation.DataBase.Models.ProfitCalculatingContext" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAQhwEAAAAAAAAAAAMAgIAAAQIAAAAACYQDA=</HashCode>
+      <FileName>DataBase\Models\ProfitCalculatingContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ProfitCalculation.Logic.Handlings.Services.IHandlingService">
+    <Position X="9.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Logic\Handlings\Services\IHandlingService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
